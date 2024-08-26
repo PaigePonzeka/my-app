@@ -1,25 +1,59 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { CardsContainer } from './Components/CardsContainer';
+import { Customer } from './types/Customer';
+
+
 
 function App() {
+
+  // placeholder
+  let customersTest = [] as Customer[];
+  customersTest.push({
+    name: "Test",
+    logo: "https://a.mktgcdn.com/p/AS7vfs1HOJueXoCeCstfI9m0w5nzW4KpUnzqr7L80-g/480x170.png"
+  });
+
+  customersTest.push({
+    name: "Test2",
+    logo: "https://a.mktgcdn.com/p/AS7vfs1HOJueXoCeCstfI9m0w5nzW4KpUnzqr7L80-g/480x170.png"
+  });
+
+  customersTest.push({
+    name: "Test24",
+    logo: "https://a.mktgcdn.com/p/AS7vfs1HOJueXoCeCstfI9m0w5nzW4KpUnzqr7L80-g/480x170.png"
+  });
+  customersTest.push({
+    name: "Test",
+    logo: "https://a.mktgcdn.com/p/AS7vfs1HOJueXoCeCstfI9m0w5nzW4KpUnzqr7L80-g/480x170.png"
+  });
+
+  customersTest.push({
+    name: "Test2",
+    logo: "https://a.mktgcdn.com/p/AS7vfs1HOJueXoCeCstfI9m0w5nzW4KpUnzqr7L80-g/480x170.png"
+  });
+
+  customersTest.push({
+    name: "Test24",
+    logo: "https://a.mktgcdn.com/p/AS7vfs1HOJueXoCeCstfI9m0w5nzW4KpUnzqr7L80-g/480x170.png"
+  });
+  customersTest.push({
+    name: "Test",
+    logo: "https://a.mktgcdn.com/p/AS7vfs1HOJueXoCeCstfI9m0w5nzW4KpUnzqr7L80-g/480x170.png"
+  });
+
+  customersTest.push({
+    name: "Test2",
+    logo: "https://a.mktgcdn.com/p/AS7vfs1HOJueXoCeCstfI9m0w5nzW4KpUnzqr7L80-g/480x170.png"
+  });
+
+  customersTest.push({
+    name: "Test24",
+    logo: "https://a.mktgcdn.com/p/AS7vfs1HOJueXoCeCstfI9m0w5nzW4KpUnzqr7L80-g/480x170.png"
+  });
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <CardsContainer customers={customersTest} />
   );
 }
 
